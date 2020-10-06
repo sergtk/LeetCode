@@ -16,14 +16,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             curRem = (curRem + nums[i]) % p;
             int findRem = (curRem - needRem + p) % p;
-            
-            /*
-            Console.WriteLine($"{i}. {nums[i]} -> ({curRem}, {findRem})");
-            if (i >= 7) {
-                Console.WriteLine("   " + ((nums[i] - nums[i-7] + p) % p).ToString());
-            }
-            */
-            
+                        
             if (remPoses.ContainsKey(findRem)) {
                 int cur = i - remPoses[findRem];
                 //Console.WriteLine($"Candidates: {remPoses[findRem] + 1} - {i} ({nums[i]})");
