@@ -1,3 +1,8 @@
+/*
+Solution can be simplified just sorting endges, then traversing them.
+But priority queue results in faster execution time.
+*/
+
 using System.Diagnostics;
 
 public class Solution {
