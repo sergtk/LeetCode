@@ -1,5 +1,36 @@
 // Problem statement: https://leetcode.com/problems/search-in-rotated-sorted-array/
+//---------------------------------------------------------------------------------
+// Simple solution
+public class Solution {
+        
+    public int Search(int[] nums, int target) {
+        int n = nums.Length;
+        int inc = 1000000;
+        if (target < nums[0]) target += inc;
 
+        int mn = 0, mx = n-1;
+        while (mn < mx) {
+            int md = (mn+mx) / 2;
+            int cur = nums[md];
+            if (cur < nums[0]) cur += inc;
+
+            if (cur < target)
+            {
+                mn = md+1;
+            } else
+            {
+                mx = md;
+            }
+        }
+        if (nums[mn] < nums[0]) nums[mn] += inc;
+        if (nums[mn] == target)
+            return mn;
+        return -1;
+    }
+}
+
+//---------------------------------------------------------------------------------
+// Clean solution
 
 public class Solution {
     
