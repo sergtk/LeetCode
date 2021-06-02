@@ -1,5 +1,7 @@
 /*
-Test cases:
+Problem statement:https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+Some test cases:
 [5,7,7,8,8,10]
 8
 [5,7,7,8,8,10]
