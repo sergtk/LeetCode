@@ -22,6 +22,8 @@ Some test cases:
 ""
 "sdffsfdsd"
 "*****"
+"bbbaab"
+"a**?***"
 */
 
 public class Solution {
